@@ -1,0 +1,295 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+
+}
+body {
+	
+	background: #fce2ec;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 10%;
+	background: #042645;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo{
+	position: relative;
+	font-size: 25px;
+	color: #cdd7df ;
+	text-decoration: none;
+	font-weight: 600;
+	cursor: default;
+	opacity: 0;
+	animation: slideRight 1s ease forwards;
+}
+.navbar a {
+	display: inline-block;
+	font-size: 25px;
+	color: #191315;
+	background: #c09748;
+	padding: 12px 28px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 35px;
+	transition: .3s;
+
+}
+.navbar a:hover {
+	color: #0ef;
+
+}
+.home {
+	position: relative;
+	width: 100%;
+	justify-content: space-between;
+	height: 100vh;
+	background: url(hey.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	padding: 70px 10% 0;
+}
+.home-content{
+	max-width: 600px;
+}
+.home-content h3 {
+	font-size: 32px;
+	font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+	margin-bottom: 30px;
+
+}
+.home-content h3 span{
+	color: #191315;
+
+}
+.home-content h1{
+	font-size: 56px;
+	font-weight: 700;
+	margin: -3px 0;
+}
+.home-content p {
+	font-size: 20px;
+}
+.home-sci a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid  #967682;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #967682;
+	text-decoration: none;
+	margin: 30px 15px 30px 0;
+}
+.home-sci a:hover{
+	background:#967682 ;
+	color: #191315;
+	box-shadow: 0 0 20px #967682  ;
+}
+.btn-box {
+	display: inline-block;
+	padding: 12px 28px;
+	background: #967682;
+	border-radius: 40px;
+	font-size: 16px;
+	color: #191315;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: 600;
+}
+.btn-box:hover{
+	box-shadow: 0 0 5px #967682;
+}
+.about{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 1.5rem;
+	background: #22324c;
+}
+.about-img img{
+	padding-bottom: 20%;
+	max-width: 630px;
+	height: aut0;
+	width: 100%;
+	border-radius: 3px;
+}
+.about-text h2{
+	font-size: 60px;
+}
+.about-text h2 span{
+	color: #a5b4c2 ;
+}
+.about-text h4{
+	font-size: 29px;
+	font-weight: 600;
+	color: #d3e4f4;
+	line-height: 1.7;
+	margin: 15px 0 30px;
+}
+.about-text p {
+	font-size: 15px;
+	line-height: 1.4;
+	margin-bottom: 4;
+}
+.contact{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 3rem;
+	padding-left: 30px;
+	margin-top: 130px;
+}
+.contact-text{
+	font-size: 90px;
+	line-height: 1;
+	text-align: center;
+}
+.contact-text h2{
+	font-size: 50px;
+}
+.contact-text h2 span{
+	color: #967682;
+
+}
+.contact-text h4{
+	margin: 15px 0;
+	color: #967682;
+	font-size: 20px;
+	font-weight: 600;
+
+}
+.contact-text p {
+	color: #967682 ;
+	font-size: 20px;
+	line-height: 30px;
+	margin: 2rem;
+}
+.contact-list{
+	margin-bottom: 3rem;
+}
+.contact-list li{
+	margin-bottom: 10px;
+	display: block;
+	font-size: 20px;
+}
+.contact-list li{
+	margin-bottom: 10px;
+	display: block;
+}
+.contact-list i {
+	display: inline-block;
+	color: #967682;
+	font-size: 20px;
+	font-weight: 600;
+	transition: all .40s ease;
+
+}
+.contact-list li a:hover{
+	transform: scale(1.01) translateY(-5px);
+	color: #967682;
+
+}
+.contact-icons i{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid #967682;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #967682;
+	text-decoration: none;
+	margin: 30px 15px 30px 0;
+	
+
+}
+.contact-icons i:hover{
+	background: #967682;
+	color: #000;
+	box-shadow: 0 0 20px #967682;
+
+}
+.contact-form form{
+	position: relative;
+
+}
+.contact-form form input, form textarea{
+	border: none;
+	outline: none;
+	width: 90%;
+	padding: 18px;
+	background: #fac6d9;
+	color: #000;
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	border-radius: 0.5rem;
+
+}
+.contact-form textarea{
+	resize: none;
+	height: 220px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight{
+	0%{
+		transform:translateX(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform:translateX(0px);
+		opacity: 1;
+	}
+}
